@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-top: 50px;
+            height: 800px;
+            border: 1px solid tomato;
+            position: relative; 
+        }
+
+        .test{
+            margin-left: 20px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+
+        #a{
+            background-color: pink;
+            border: 3px solid green;
+            margin: 5px;
+            position: static;
+            top: 40px;
+            left: 0px;
+            width: 100%;
+            height: 100px;
+        }
+
+        #b{
+            background-color: lightblue;
+            border: 3px solid green;
+            margin: 5px;
+            position: relative;
+            height: 200px;
+            width: 500px;
+            bottom: 0px;
+        }
+
+        #c{
+            background-color: yellowgreen;
+            border: 3px solid green;
+            margin: 5px;
+            position: absolute;
+            top: 80px;
+            right: 0px;
+            width: 200px;
+            height: 100px;
+        }
+
+        #d{
+            background-color: lawngreen;
+            border: 3px solid green;
+            margin: 5px;
+            position: fixed;
+            top: 120px;
+            left: 50px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test" id="a">This 1st div element has position: static; top: 40px; left: 0; width: 100%; height: 100px; border: 3px solid #73AD21</div>
+        <div class="test" id="b">This 2nd div element has position: relative; written after pre tag but before 3rd and 4th div</div>
+        <div class="test" id="c">This 3rd div element has position: absolute; top: 80px; right: 0; width: 200px; height: 100px; border: 3px solid #73AD21;</div>
+        <div class="test" id="d">This 4th div element has position: fix; top: 120px; left: 50px; width: 200px; height: 100px; border: 3px solid #73AD21;</div>
+    </div>
+</body>
+</html>
