@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="#" method="get" align="center">
+        <fieldset>
+            <label>Booking</label>
+            <input type="date" name="book" min="2025-09-07" max="2025-12-31">
+            <br><br>
+            <label>Age</label>
+            <input type="number" name="age" min="1" max="100" step="1" value="15">
+            <br><br>
+            <label>Favourite Color</label>
+            <input type="color" name="fav" value="#ff0000">
+            <br><br>
+            <label> Preferred Browser</label>
+            <input list="browser" name="browser">
+            <datalist id="browser">
+                <option value="Chrome">
+                <option value="Edge">
+            </datalist>
+            <br><br>
+            <label>Select Branch</label>
+            <select>
+                <option>CSE</option>
+                <option>IT</option>
+            </select>
+            <br><br>
+            <input type="Submit">
+            <input type="Reset">
+        </fieldset>
+        </form>
+    </body>
+</html>
