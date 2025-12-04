@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{ width:150px;
+            height:22px;
+            border:2px solid pink;
+            background-color: white;
+            transition-property:background-color, width, height;
+            transition-duration:3s, 3s, 3s;
+            transition-delay:2s;
+        }
+        
+        input:hover{
+            background-color: yellow;
+            width:300px;
+            height:40px; 
+        }
+    </style>
+</head>
+<body>
+    <form action="GET">
+        <label>Uname:<input type="text" placeholder="Enter Name" name="Uname"/></label>
+        <br><br>
+        <label>Password:<input type="password" placeholder="Password Requires" maxlength="8"/></label>
+        <br><br>    
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
+<style>
+            
