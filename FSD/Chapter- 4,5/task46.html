@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+div {
+animation-name: example;
+width: 100px;
+height: 100px;
+background-color:lightskyblue;
+animation-duration: 4s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out; /* Added timing for smooth start & end */
+}
+@keyframes example {
+ from {background-color: lightskyblue;}
+ to {background-color: blueviolet;}
+}
+</style>
+</head>
+<body>
+<div></div>
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+</body>
+</html>
