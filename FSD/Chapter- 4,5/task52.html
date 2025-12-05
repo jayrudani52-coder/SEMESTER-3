@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #name:active input{
+            background-color: lightgreen;
+        }
+        .na:focus{
+            background-color: lightgreen;
+        }
+        .pass:hover{
+            font-size:20px;
+        }
+        .num:hover{
+            font-size: 20px;
+        }AC
+        .gender:active{
+            color: blue;
+        }
+        button:hover{
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label id="name">Name:<input type="text" class="na"></label><br><br>
+        <label id="password"></label>password:<input type="password" class="pass"><br><br>
+        <label id="contact"></label>contact number:<input type="text" class="num"><br><br>
+        Gender:<label class="gender"><input type="radio">Male</label>
+        <label class="gender"><input type="radio">Female</label><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
