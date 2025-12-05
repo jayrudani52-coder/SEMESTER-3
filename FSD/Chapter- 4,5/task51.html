@@ -1,0 +1,30 @@
+<head>
+<style>
+#name:active input{
+background-color: lightgreen;
+}
+.name:focus{background-color: lightgreen;}
+.contact:hover,.pass:hover { font-size: 18px;}
+.gender:active {color: blue;}
+button:hover {
+font-weight: bold;
+font-style: italic;
+}
+</style>
+</head>
+<body>
+<form>
+<label id="name">Name:
+<input type="text" class="name"><br><br>
+</label>
+<label class="pass">Password:</label>
+<input type="password" id="pass"><br><br>
+<label class="contact">Contact Number:</label>
+<input type="text" id="contact"><br><br>
+Gender:
+<label class="gender"><input type="radio" name="g"> Male</label>
+<label class="gender"><input type="radio" name="g"> Female</label><br><br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+</body>
