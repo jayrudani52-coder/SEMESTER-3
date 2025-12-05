@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <style>
+ .table1{height:150px; width:300px; margin:10px;background-color:blue}
+ .table2{height:150px; width:300px; margin:10px;background-color:green}
+ @media (orientation:portrait) {
+ .table1{width:100%; height:auto; background-color:green}
+ .table2{width:100%; height:auto; background-color:blue}
+ }
+ </style>
+ <title>Responsive Tables</title>
+</head>
+<body>
+ <div>
+ <table class="table1">
+ <tr>
+ <td>T1 Data 1</td> <td>T1 Data 2</td> <td>T1 Data 3</td>
+ </tr>
+ <tr>
+ <td>Data 4</td> <td>Data 5</td> <td>Data 6</td>
+ </tr>
+ </table>
+ </div>
+<br>
+ <div>
+ <table class="table2">
+ <tr>
+ <td>T2 Data 1</td> <td>T2 Data 2</td> <td>T2 Data 3</td>
+ </tr>
+ <tr>
+ <td>T2 Data 4</td> <td>T2 Data 5</td> <td>T2 Data 6</td>
+ </tr>
+ </table>
+ </div>
+</body>
+</html>
