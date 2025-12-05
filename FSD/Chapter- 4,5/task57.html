@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+ :root {
+ --section-height: 20%;
+ --border-color: red;
+ --title-hover-color: red;
+ --paragraph-hover-space: 2cm;
+ --paragraph-hover-transform: capitalize;
+ }
+ .section {
+ height: var(--section-height);
+ width: 100%;
+ padding: 20px;
+ transition: border 0.3s;
+ }
+ .section:hover {
+ border: 2px solid var(--border-color);
+ }
+ .section h2 {
+ color: black;
+ transition: color 0.3s;
+ }
+ .section h2:hover {
+ color: var(--title-hover-color);
+ }
+ .section p {
+ transition: transform 0.3s, margin-left 0.3s;
+ }
+ .section p:hover {
+ /* transform: scale(1.1); */
+ margin-left: var(--paragraph-hover-space);
+ text-transform: var(--paragraph-hover-transform);
+ }
+ </style>
+ <title>Styled Sections</title>
+</head>
+<body>
+ <div class="section">
+ <h2>Title 1</h2>
+ <p>This is the content of section 1.</p>
+ </div>
+ <div class="section">
+ <h2>Title 2</h2>
+ <p>This is the content of section 2.</p>
+ </div>
+ <div class="section">
+ <h2>Title 3</h2>
+ <p>This is the content of section 3.</p>
+ </div>
+</body>
+</html>
