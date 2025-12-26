@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function warn(){
+            alert("I am WARNING")
+            document.write("You Read WARNING")
+        }
+
+        function conf(){
+            let result=confirm("Do you Agree?")
+            if(result==true){
+                document.write("User Agree")
+                return true
+            }
+            else{
+                document.write("User Disagree")
+                return false
+            }
+        }
+
+        function p(){
+            let info=prompt("Enter Name","Username")
+            document.write(`Welcome ${info}`)
+        }
+    </script>
+    <input type="button" value="Alert Box" onclick="warn()">
+    <input type="button" value="Confirm Box" onclick="conf()">
+    <input type="button" value="User Input" onclick="p()">
+</body>
+</html>
