@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const add=(a,b)=>{
+            const result=a+b
+            return result
+        }
+        console.log(add(5,4))
+
+        const add1=(a,b)=>a+b
+        console.log(add1(2,5))
+
+        const square=x=>x*x
+        console.log(square(5))
+
+        const fun=p=>`val=${p}`
+        console.log(fun(30))
+
+        const add2=(j,k)=>{
+            const result=`${j+k}`
+            return result
+        }
+        console.log(add2(3,5))
+
+        const add3=(j,k)=>{return `${j+k}`}
+        console.log(`Addition=${add3(5,9)}`)
+
+        fun1=(val1)=>"hello"+val1
+        console.log(fun1("world"))
+    </script>
+</body>
+</html>
