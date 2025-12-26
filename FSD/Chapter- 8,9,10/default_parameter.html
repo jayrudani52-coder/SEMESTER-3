@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(a,b=3){
+            return a+b
+        }
+        console.log(fun(2))
+        console.log(fun(2,5))
+
+        function fun1(bg,tx,size="20px",fs="italic"){
+            i=document.getElementById("a1")
+            i.style.color=tx;
+            i.style.backgroundColor=bg;
+            i.style.fontSize=size;
+            i.style.fontStyle=fs;
+        }
+    </script>
+    <div id="a1">Hello</div>
+    <input type="submit" onclick="fun1('tomato','cyan')" value="click me">
+</body>
+</html>
