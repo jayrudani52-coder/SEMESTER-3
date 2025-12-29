@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a">Hello</p>
+    <p class="b">Hello1</p>
+    <p class="b">Hello2</p>
+    <input type="button" onclick="fun()" value="Change">
+    <script>
+        function fun(){
+            document.getElementById("a").innerHTML="How are you..."
+            let x=document.getElementsByClassName("b")
+            for(i=0 ; i< x.length ; i++){
+                x[i].innerHTML="I am applied to all"  
+            }
+        //  x[0].innerHTML="Loop Require to change all class innerHTML"
+    }
+    </script>
+</body>
+</html>
