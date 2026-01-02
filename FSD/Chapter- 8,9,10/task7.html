@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1" onsubmit="fun()">
+        First Name: <input type="text" name="fname" value=""><br>
+        Last Name: <input type="text" name="lname" value=""><br>
+        <input type="submit">
+    </form>
+    <script>
+        function fun(){
+             obj1=document.f1.fname.value
+             if(isNaN(obj1)){
+                alert("Enter Number only")
+             }
+             else if(obj1.length!=4){
+                alert("Enter 4 digit number")
+             }
+             else{
+                alert(obj1)
+             }
+        }
+    </script>
+</body>
+</html>
