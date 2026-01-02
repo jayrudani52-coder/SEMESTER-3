@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const fun=()=>{
+         const i=document.querySelector("#a1")
+         i.setAttribute("src",i.getAttribute("src")=="images.jpg"?"Form.png":"images.jpg")
+    }
+    </script>
+    <img id="a1">
+    <button onclick="fun()">Toggle</button>
+</body>
+</html>
