@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onfocus="this.style.backgroundColor='yellow'"><br>
+    <input type="text" onblur="this.style.backgroundColor='pink'"><br>
+    <input type="text" oninput="this.value=this.value.toUpperCase()"><br>
+    <input type="text" onchange="this.value=this.value.toUpperCase()"><br>
+    <form action="#" onsubmit="fun()">
+        Enter name: <input type="text" name="fname" id="a"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function fun(){
+            a=document.getElementById("a").value
+            alert("Welcome"+a)
+        }
+    </script>
+</body>
+</html>
