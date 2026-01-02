@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun(event)">Hii</button>
+    <script>
+        function fun(e){
+            alert(e.button)
+        }
+        function stop(e){
+            e.PreventDefault()
+            alert("Form Submission stopped")
+        }
+    </script>
+    <form onsubmit="stop(event)">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
