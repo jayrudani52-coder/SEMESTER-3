@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchdata() {
+            return new Promise((resolve, reject) => {
+                console.log("Waiting...")
+                setTimeout(() => {
+                    let success = true;
+                    if (success) {
+                        resolve("Order Completed")
+                    }
+                    else {
+                        reject("Order Failed")
+                    }
+                }, 5000)
+            })
+        }
+        console.log("Order Placed")
+        async function getdata() {
+            try {
+                let result = await fetchdata()
+                console.log(result)
+            }
+            catch (error) {
+                console.log("Error", error)
+            }
+        }
+        getdata()
+    </script>
+</body>
+</html>
